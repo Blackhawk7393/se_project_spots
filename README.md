@@ -17,3 +17,5 @@ Create a profile with profile picture, add images to site and like images that a
 Webpage is deployed on GITHUB Pages
 
 Deployment link: https://blackhawk7393.github.io/se_project_spots/
+
+Recorded Video Link: https://drive.google.com/file/d/1qHd1DG_u7ZJF-3m9903Koaw0PMTzq2Ri/view?usp=sharing
