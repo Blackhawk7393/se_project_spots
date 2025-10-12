@@ -36,7 +36,6 @@ newPostCloseBtn.addEventListener("click", function() {
 
 function handleEditProfileSubmit (evt) {
   evt.preventDefault();
-  console.log("submitted");
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   editProfileModal.classList.remove("modal_is-opened");
