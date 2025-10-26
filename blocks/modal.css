@@ -104,6 +104,51 @@
   cursor: pointer;
 }
 
+.modal__preview-container {
+  position: relative;
+}
+
+.modal__preview-close-btn {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-image: url(../images/preview-close.svg);
+  border: none;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.modal__preview-close-btn:hover {
+  cursor: pointer;
+  opacity: .4;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  padding: 10px;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  padding: 4px 8px;
+  margin: 8px 0 0 0;
+  max-width: fit-content;
+  width: 100%;
+  background-color: #212121;
+  border-radius: 8px;
+  color: #FCF5E5;
+  font-family: "Poppins";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 627px) {
   .modal__title {
     font-size: 20px;
@@ -116,5 +161,18 @@
   .modal__save-btn {
     width: 100%;
     max-width: none;
+  }
+
+  .modal__image {
+    max-width: 288px;
+  }
+
+  .modal__preview-close-btn {
+   top: -30px;
+   right: 0px;
+  }
+
+  .modal__caption {
+    font-size: 16px;
   }
 }
