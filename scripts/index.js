@@ -43,7 +43,10 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
-function getCardTemplate(data) {
+const previewModal = document.querySelector("#preview-modal");
+const previewCloseBtn = previewModal.querySelector(".modal__preview-close-btn");
+
+function getCardElement(data) {
   const cardElement = cardTemplate.content.querySelector(".card").cloneNode(true);
   const cardTitle = cardElement.querySelector(".card__title");
   const cardImage = cardElement.querySelector(".card__image");
@@ -60,9 +63,6 @@ function getCardTemplate(data) {
   cardDeleteBtn.addEventListener("click", () => {
   cardElement.remove();
   });
-
-  const previewModal = document.querySelector("#preview-modal");
-  const previewCloseBtn = previewModal.querySelector(".modal__preview-close-btn");
 
   cardImage.addEventListener("click", () => {
     openModal(previewModal);
@@ -117,7 +117,7 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 function handleNewPostSubmit (evt) {
   evt.preventDefault();
   closeModal(newPostModal);
-  const cardElement = getCardTemplate({
+  const cardElement = getCardElement({
     name: imageCaptionInput.value,
     link: imageLinkInput.value,
   });
@@ -127,6 +127,6 @@ function handleNewPostSubmit (evt) {
 newPostForm.addEventListener("submit", handleNewPostSubmit);
 
 initialCards.forEach(function (item) {
-  const cardElement = getCardTemplate(item);
+  const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });

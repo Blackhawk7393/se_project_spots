@@ -44,7 +44,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer page__section">
       <p class="footer__description">2025 &copy; Spots</p>
     </footer>
     <div class="modal" id="edit-profile-modal">
@@ -83,7 +83,8 @@
             type="url"
             id="image-link-input"
             class="modal__input"
-            placeholder="Paste a link to the picture">
+            placeholder="Paste a link to the picture"
+            required>
           </label>
            <label for="image-caption-input" class="modal__label">
             Caption
@@ -91,7 +92,8 @@
             type="text"
             id="image-caption-input"
             class="modal__input"
-            placeholder="Type your caption">
+            placeholder="Type your caption"
+            required>
           </label>
           <button type="submit" class="modal__save-btn">Save</button>
         </form>
@@ -100,7 +102,7 @@
     <div class="modal" id="preview-modal">
       <div class="modal__preview-container">
         <button type="button" class="modal__preview-close-btn" aria-label="Close modal"></button>
-        <img src="" alt="" class="modal__image">
+        <img src="#" alt="#" class="modal__image">
         <h2 class="modal__caption"></h2>
       </div>
     </div>

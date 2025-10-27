@@ -70,7 +70,8 @@
 }
 
 .profile__add-btn {
-  margin: 138px 0 0px auto;
+  margin-left: auto;
+  align-self: end;
   width: 149px;
   height: 52px;
   border: none;

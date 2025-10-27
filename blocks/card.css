@@ -10,6 +10,11 @@
   display: block;
   border-radius: 8px;
   object-fit: cover;
+  cursor: pointer;
+}
+
+.card__image:hover {
+  opacity: 0.95;
 }
 
 .card__content {
@@ -55,6 +60,7 @@
   border: none;
   background-color: transparent;
   opacity: .4;
+  background-repeat: no-repeat;
 }
 
 .card__like-btn:hover {
@@ -64,6 +70,7 @@
 
 .card__like-btn_active {
   background-image: url(../images/State-Liked.svg);
+  background-repeat: no-repeat;
   opacity: 1;
 }
 
