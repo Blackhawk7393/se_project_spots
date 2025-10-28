@@ -45,6 +45,7 @@
   border: none;
   background-color: transparent;
   opacity: .4;
+  z-index: 1;
 }
 
 .card__delete-btn:hover {

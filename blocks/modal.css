@@ -10,6 +10,8 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  opacity: 0;
+  z-index: 2;
   transition:visibility 0.5s linear, opacity 0.5s linear;
 }
 
@@ -73,6 +75,7 @@
   width: 100%;
   padding: 16px 12px;
   border-radius: 8px;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-style: medium;
   font-weight: 500;
@@ -128,7 +131,6 @@
 .modal__image {
   max-width: 80vw;
   max-height: 80vh;
-  padding: 10px;
   object-fit: contain;
   display: block;
   border-radius: 8px;
@@ -148,6 +150,10 @@
 }
 
 @media screen and (max-width: 627px) {
+  .modal__container {
+    padding: 22px 12px 12px;
+  }
+
   .modal__title {
     font-size: 20px;
   }
@@ -161,12 +167,17 @@
     max-width: none;
   }
 
+  .modal__close-btn {
+    top: 20px;
+    right: 12px;
+  }
+
   .modal__image {
     max-width: 288px;
   }
 
   .modal__preview-close-btn {
-   top: -30px;
+   top: -40px;
    right: 0px;
   }
 

@@ -121,6 +121,9 @@ function handleNewPostSubmit (evt) {
     name: imageCaptionInput.value,
     link: imageLinkInput.value,
   });
+  imageCaptionInput = "";
+  imageLinkInput = "";
+
   cardsList.prepend(cardElement);
 }
 
