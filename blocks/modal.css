@@ -46,6 +46,7 @@
 .modal__close-btn:hover {
   transition: opacity 0.3s;
   cursor: pointer;
+  opacity: 1;
 }
 
 .modal__title {
@@ -75,6 +76,7 @@
   margin-top: 8px;
   width: 100%;
   padding: 16px 12px;
+  border: 1px solid;
   border-radius: 8px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -113,12 +115,17 @@ border: 1px solid rgba(255, 0, 0, 0.6);
   padding: 18px 32px;
   background-color: #212121;
   border-radius: 8px;
+  border: none;
   color: #FCF5E5;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
+}
+
+.modal__save-btn:hover {
+  background-color: (33, 33, 33, 0.8);
 }
 
 .modal__btn_error {
